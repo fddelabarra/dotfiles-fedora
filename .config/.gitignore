@@ -5,5 +5,5 @@
 # Excepto
 
 !.gitignore
-!Readme.md
-!/.config
+!alacritty
+!fish
