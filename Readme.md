@@ -47,6 +47,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```bash
 cargo install exa
 ```
-- otros
+- entre otros
+
+- Para evitar todo eso solo se debe usar el script 
+```bashc
+./configuration.sh
+```
+El cual instalará Fish (starship), Cargo y Alacritty automaticamente.
 
 
