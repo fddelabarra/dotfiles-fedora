@@ -5,6 +5,6 @@
 # Excepto
 
 !.gitignore
-!Readme.md
+!README.md
 !configuration.sh
 !/.config
