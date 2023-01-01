@@ -61,16 +61,17 @@ cargo install exa bat cargo-update starship
 El cual instalará Fish (starship), Cargo y Alacritty automaticamente.
 
 - rpm fusion
-[RPM Fusion Nvidia](https://rpmfusion.org/Howto/NVIDIA)
 
-[RPM Fusion](https://rpmfusion.org/Configuration)
+    [RPM Fusion Nvidia](https://rpmfusion.org/Howto/NVIDIA)
+
+    [RPM Fusion](https://rpmfusion.org/Configuration)
 
 - Flathub
 ```bash
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-- Para que no aparezca mensaje de fish
+- Borrar mensaje Welcome de Fish
 ```bash
 set -Ux fish_greeting
 ```
