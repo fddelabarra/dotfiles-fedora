@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 set -xe
 
@@ -6,9 +6,9 @@ set -xe
 # echo
 
 echo Name Github
-read v1
+read -r v1
 echo Correo Github
-read v2
+read -r v2
 
 sudo dnf up --refresh -y
 sudo dnf groupinstall "Development Tools" "Development Libraries"
@@ -17,7 +17,7 @@ sudo dnf groupinstall "Development Tools" "Development Libraries"
 # Rustup
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-bash $HOME/.cargo/env
+source "$HOME/.cargo/env"
 
 
 # Descargas sudo dnf

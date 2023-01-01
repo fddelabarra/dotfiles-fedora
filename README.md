@@ -26,13 +26,20 @@ CARGO_PROFILE_RELEASE_PANIC=abort
 ### Cosas que configurar/descargar
 
 - Alacritty
+```bash
+mkdir github
+cd github
+git clone https://github.com/ctronp/alacritty.git  # By Carlos (Ctronp) (tiene install.sh ya hecho para mas comodidad al actualizar)
+```
+
 - Fish:
 ```bash
 sudo dnf in fish
 ```
 Cambiar de bash, buscar direccion con which fish en caso de que no pregunte
 ```bash
-chsh
+which fish
+chsh -s /usr/bin/fish
 ```
 Si no esta chsh, instalar
 ```bash
@@ -43,16 +50,27 @@ sudo dnf in util-linux-user
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-- exa: 
+- exa, entre otros: 
 ```bash
-cargo install exa
+cargo install exa bat cargo-update starship
 ```
-- entre otros
-
 - Para evitar todo eso solo se debe usar el script 
-```bashc
+```bash
 ./configuration.sh
 ```
 El cual instalará Fish (starship), Cargo y Alacritty automaticamente.
 
+- rpm fusion
+[RPM Fusion Nvidia](https://rpmfusion.org/Howto/NVIDIA)
 
+[RPM Fusion](https://rpmfusion.org/Configuration)
+
+- Flathub
+```bash
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+- Para que no aparezca mensaje de fish
+```bash
+set -Ux fish_greeting
+```

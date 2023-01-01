@@ -5,7 +5,4 @@
 # Excepto
 
 !.gitignore
-!alacritty
-!fish
-!environment.d
-!micro
+!settings.json
