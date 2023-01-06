@@ -1,3 +1,11 @@
-# Ignore
+# Ignorar todo
 
-fish_variables
+/*
+
+# Excepto
+
+.gitignore
+!fish_variables
+conf.d
+functions
+config.fish
