@@ -6,5 +6,6 @@
 
 !.gitignore
 !README.md
+!notes.md
 !configuration.sh
 !/.config
